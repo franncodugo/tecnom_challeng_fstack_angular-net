@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|c:\\users\\franco\\desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\application\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\users\\franco\\desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\infrastructure\\externalservices\\tecnomworkshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\externalservices\\tecnomworkshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|c:\\users\\franco\\desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E528BBC3-1C26-8C35-F682-23718816ADCD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|c:\\users\\franco\\desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\application\\interfaces\\iworkshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iworkshopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|c:\\users\\franco\\desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\application\\dtos\\workshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80C4E72-27A0-12B5-0634-DD5C11CFB0C1}|Application\\Application.csproj|solutionrelative:application\\dtos\\workshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Application\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Application\\Interfaces\\IAppointmentRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T00:13:33.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TecnomWorkshopService.cs",
+              "DocumentMoniker": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Infrastructure\\ExternalServices\\TecnomWorkshopService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ExternalServices\\TecnomWorkshopService.cs",
+              "ToolTip": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Infrastructure\\ExternalServices\\TecnomWorkshopService.cs",
+              "RelativeToolTip": "Infrastructure\\ExternalServices\\TecnomWorkshopService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T00:13:03.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Domain\\Entities\\Appointment.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Domain\\Entities\\Appointment.cs",
+              "RelativeToolTip": "Domain\\Entities\\Appointment.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA+wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T00:13:00.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IWorkshopService.cs",
+              "DocumentMoniker": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Application\\Interfaces\\IWorkshopService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IWorkshopService.cs",
+              "ToolTip": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Application\\Interfaces\\IWorkshopService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IWorkshopService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T00:12:57.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorkshopDto.cs",
+              "DocumentMoniker": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Application\\Dtos\\WorkshopDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\WorkshopDto.cs",
+              "ToolTip": "C:\\Users\\Franco\\Desktop\\tecnom_challenge_angular_net\\tecnom_challeng_fstack_angular-net\\Application\\Dtos\\WorkshopDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\WorkshopDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T00:12:56.304Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

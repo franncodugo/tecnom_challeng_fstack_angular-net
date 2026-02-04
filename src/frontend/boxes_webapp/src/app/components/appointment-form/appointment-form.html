@@ -1,1 +1,76 @@
-<p>appointment-form works!</p>
+<div class="max-w-3xl mx-auto p-8 bg-white shadow-2xl rounded-2xl border border-gray-100 mb-10">
+  <div class="flex items-center mb-6">
+    <div class="bg-blue-600 p-3 rounded-lg mr-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    </div>
+    <h2 class="text-2xl font-bold text-gray-800">New Appointment Booking</h2>
+  </div>
+
+  <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()" class="space-y-6">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="flex flex-col">
+        <label class="text-sm font-semibold text-gray-600 mb-1">Oficial Workshop *</label>
+        <select formControlName="placeId" 
+                class="border-2 border-gray-200 p-3 rounded-xl focus:border-blue-500 focus:outline-none transition">
+          <option [value]="null" disabled>Select workshop</option>
+          @for (shop of workshops(); track shop.id) {
+            <option [value]="shop.id">{{ shop.name }} - {{ shop.address }}</option>
+          }
+        </select>
+        @if (appointmentForm.get('placeId')?.invalid && appointmentForm.get('placeId')?.touched) {
+          <span class="text-red-500 text-xs mt-1">The workshop is required.</span>
+        }
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-semibold text-gray-600 mb-1">Type of service*</label>
+        <input type="text" formControlName="serviceType" 
+               placeholder="Ej: Service 10k, Frenos, etc."
+               class="border-2 border-gray-200 p-3 rounded-xl focus:border-blue-500 focus:outline-none transition">
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <label class="text-sm font-semibold text-gray-600 mb-1">Preferred Date & Time *</label>
+      <input type="datetime-local" formControlName="appointmentAt" 
+             class="border-2 border-gray-200 p-3 rounded-xl focus:border-blue-500 focus:outline-none transition">
+    </div>
+
+    <div formGroupName="contact" class="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-4">
+      <h3 class="text-md font-bold text-gray-700 flex items-center">
+        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> Contact information
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <input type="text" formControlName="name" placeholder="Nombre completo" class="p-3 border rounded-lg">
+        <input type="email" formControlName="email" placeholder="Correo electrónico" class="p-3 border rounded-lg">
+        <input type="text" formControlName="phone" placeholder="Teléfono" class="p-3 border rounded-lg">
+      </div>
+    </div>
+
+    <div formGroupName="vehicle" class="p-6 rounded-2xl border border-dashed border-gray-300 space-y-4">
+      <h3 class="text-md font-bold text-gray-500">Vehicle Details (Optional)</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <input type="text" formControlName="make" placeholder="Marca" class="p-2 border rounded-lg text-sm">
+        <input type="text" formControlName="model" placeholder="Modelo" class="p-2 border rounded-lg text-sm">
+        <input type="text" formControlName="year" placeholder="Año" class="p-2 border rounded-lg text-sm">
+        <input type="text" formControlName="licensePlate" placeholder="Patente" class="p-2 border rounded-lg text-sm">
+      </div>
+    </div>
+
+    <button type="submit" 
+            [disabled]="appointmentForm.invalid || loading()"
+            class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-700 active:scale-[0.98] transition-all disabled:bg-gray-300 disabled:shadow-none">
+      @if (loading()) {
+        <span class="flex justify-center items-center">
+          <svg class="animate-spin h-5 w-5 mr-3 text-white" viewBox="0 0 24 24"></svg>
+          Processing...
+        </span>
+      } @else {
+        Schedule Appointment
+      }
+    </button>
+  </form>
+</div>

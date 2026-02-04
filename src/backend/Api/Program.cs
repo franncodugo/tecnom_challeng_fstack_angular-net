@@ -8,11 +8,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Service registrations.
 builder.Services.AddMemoryCache();
-builder.Services.AddHttpClient<IWorkshopService, TecnomWorkshopService>();
+builder.Services.AddHttpClient<IWorkshopService, TecnomWorkshopService>(); 
 builder.Services.AddSingleton<IAppointmentRepository, InMemoryAppointmentRepository>();
 
-// CORS for Angular frontend
+// CORS for Angular frontend.
 builder.Services.AddCors(options => {
     options.AddPolicy("AngularPolicy", policy => {
         policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
